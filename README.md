@@ -37,8 +37,8 @@ Because the model runs locally, there are no external dependencies or processing
 
 ## Live Demo
 
-Try the tool here:  
-https://your-github-username.github.io/#/
+ ➝ [Try the tool here ](https://luc-constantin.github.io/free-image-background-remover/)   
+
 
 ## Technologies Used
 

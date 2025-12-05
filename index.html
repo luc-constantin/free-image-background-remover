@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Remover</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Theme toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+    <h1>Background Remover</h1>
+
+    <!-- Upload area -->
+    <div id="dropZone" class="drop-zone">
+        Drag & drop an image here<br>or click to select
+    </div>
+
+    <input type="file" id="fileInput" accept="image/*" hidden>
+
+    <!-- Preview -->
+    <img id="preview">
+
+    <!-- Loader -->
+    <div id="loader" class="loader"></div>
+
+    <!-- Processing message -->
+    <p id="processingMessage" class="processing-message" style="display:none;">
+        Processing your image… This may take a few seconds.
+    </p>
+
+    <!-- Process button -->
+    <button id="processBtn" class="btn" disabled>Remove background</button>
+
+    <p class="note">
+        Images larger than 20 MB are rejected. Very large images are resized before processing.
+    </p>
+
+    <!-- Before / After labels -->
+    <div id="comparisonLabels" class="comparison-labels">
+        <span class="before-label">Before</span>
+        <span class="after-label">After</span>
+    </div>
+
+    <!-- Slider -->
+    <div id="sliderContainer" class="slider-container">
+        <img id="afterImg">
+        <div id="beforeWrapper" class="before-img">
+            <img id="beforeImg">
+        </div>
+        <div id="sliderHandle" class="slider-handle"></div>
+    </div>
+
+    <!-- Download -->
+    <button id="downloadBtn" class="btn" style="display:none;">Download processed image</button>
+
+    <!-- Warning -->
+    <p id="warningMessage" class="warning" style="display:none;">
+        ⚠️ Please download your image first. Uploading a new one will erase the result.
+    </p>
+
+    <!-- Upload another image -->
+    <button id="newImageBtn" class="btn secondary" style="display:none;">
+        Upload another image ➕
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Demo by <a href="https://accolades.dev" target="_blank">Luc Constantin</a>.  
+        Source code on <a href="#" target="_blank">GitHub</a>
+    </footer>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>

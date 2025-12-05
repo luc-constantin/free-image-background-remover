@@ -13,7 +13,7 @@ Features include:
 - Automatic light or dark theme
 - No account required
 
-Try the tool now 
+## [👉 Try the tool now](https://luc-constantin.github.io/free-image-background-remover/) 
 
 A simple and modern web tool that removes the background from any image directly in the browser.  
 No uploads. No servers. No accounts. The processing happens locally on the user's device using the `@imgly/background-removal` WebAssembly model.

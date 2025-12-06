@@ -54,14 +54,6 @@ Because the model runs locally, there are no external dependencies or processing
 4. Use the slider to compare the original and the processed image  
 5. Download your result at full resolution  
 
-## Development
-
-Clone the repository:
-git clone https://github.com/your-username/your-repo-name.git
-
-
-Open `index.html` in a browser or use a simple local server:
-
 ## License
 
 This project is released under the MIT License.  
